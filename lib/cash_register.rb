@@ -7,12 +7,15 @@ class CashRegister
   def initialize(discount = 0)
     @total = 0
     @discount = discount
-    @items = []
+    @items = {}
   end
 
   def add_item(title, price, quantity = 1)
     self.total += price * quantity
-    quantity.times {items << title}
+    quantity.times do
+      items.title << title
+      items.price << price
+    end
   end
   
   def apply_discount
@@ -24,12 +27,8 @@ class CashRegister
     end
   end
   
-  def items
-    @items
-  end
-  
   def void_last_transaction
-    items.
+    self.items.pop
   end
 end
 
