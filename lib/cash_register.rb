@@ -31,4 +31,4 @@ class CashRegister
   end
 end
 
-# binding.pry
+binding.pry
