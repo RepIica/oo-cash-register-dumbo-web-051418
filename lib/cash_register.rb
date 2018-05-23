@@ -1,3 +1,5 @@
+require 'pry'
+
 class CashRegister
   
   attr_accessor :total
@@ -7,3 +9,5 @@ class CashRegister
   end
 
 end
+
+binding.pry
