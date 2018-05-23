@@ -10,4 +10,4 @@ class CashRegister
 
 end
 
-binding.pry
+# binding.pry
