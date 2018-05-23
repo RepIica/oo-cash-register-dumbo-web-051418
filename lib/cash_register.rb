@@ -14,6 +14,10 @@ class CashRegister
     self.total += price * quantity
     #shovel item title?
   end
+  
+  def apply_discount
+    self.total = total - total * discount
+  end
 end
 
 # binding.pry
